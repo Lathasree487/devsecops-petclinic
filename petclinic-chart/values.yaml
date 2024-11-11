@@ -1,0 +1,15 @@
+replicaCount: 1
+name: petclinic
+image:
+  repository: 427673671759.dkr.ecr.us-east-1.amazonaws.com/petclinic
+  pullPolicy: IfNotPresent
+  tag: "3-a78b8e6"
+
+service:
+  type: LoadBalancer
+  port: 80
+
+ingress:
+  enabled: false
+
+resources: {}
